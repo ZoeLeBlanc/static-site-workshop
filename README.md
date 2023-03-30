@@ -202,17 +202,13 @@ If you're interested in the longer history of the internet checkout this timelin
 
 ### Static Site Exercise
 
-## How does a static site actually work?
-
-A google search for static site generators returns millions of medium and quora posts debating which static site is the best, but few of these actually delve into the mechanics.
-
-Fundamentally, a static site generator takes some form of plain text file and transforms it into html files. These generator libraries will also let you style your website using a combinator of layouts, modular html, style sheets, and javascript.
-
-Most static site generators rely on similar patterns for how to manipulate your data, even if the details differ.
-
-To get a static site generator on your computer, means the first step is to usually download a code library. These libraries contain the code to transform your data, and they are almost always available to see on github if you want to delve deeper.
+1. First, I will be trying to follow the instructions in this tutorial <https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll>.
+2. But, I also already have a version of a static site set up here as well, so we can try altering that one as well.
+3. Finally, if we have time we might try embedding a map into our static site.
 
 #### Deep Dive Into Static Sites
+
+If you are curious about static sites in different programming languages, here's an overview of how to setup a static site in a few different languages.
 
 Pelican:
 
@@ -496,7 +492,7 @@ Gatsby:
 gatsby develop #or serve
 ```
 
-## Hosting and Testing Static Sites
+#### Hosting and Testing Static Sites
 
 - Github
   - [Hosting your static site through Github Pages (this example is with jekyll)](https://help.github.com/en/github/working-with-github-pages/setting-up-a-github-pages-site-with-jekyll)
@@ -533,7 +529,7 @@ bundle exec jekyll build && bundle exec htmlproofer ./_site \
   # --url-ignore '/http://www.gutenberg.org/*/','/https://github.com/programminghistorian/jekyll/(commits|blob)/*/','/\#/',"/espanol/","/deprecated/",'/collection.britishmuseum.org/','/analytics.hathitrust.org/'
 ```
 
-## Try out some Static Sites
+#### Static Site Examples
 
 Almost every programming language has a static site generator, if not multiple.
 
@@ -609,13 +605,3 @@ Example sites with Hugo
 
 - [Jason Heppler's personal website](https://github.com/hepplerj/jasonheppler.org)
 - [Grant Wythoff's personal website](https://wythoff.net/)
-
-## Some broader questions to help you decide what's the best fit for you
-
-1. What programming language are you interested in using or learning? Most of these involve using HTML, CSS, and JavaScript, but some like GatsbyJS require some knowledge of React whereas Jekyll only requires a tiny bit of Ruby to work in the Makefile
-
-2. How much complexity will your site have? How many pages? How many different types of content? Some static site generators and themes make assumptions for how your content is organized so you may want to find a fairly close example project.
-
-3. How many contributors? If you are working on a team, you'll want to invest in testing, continuous integration and deployment to make sure the site doesn't break. You'll also want to decide on an editorial process (for an example see [the submissions process for the Programming Historian](https://github.com/programminghistorian/ph-submissions)).
-
-4. How much do you want to customize your site? Some static site generators like Gatsby are easier to customize the styling, whereas others have a whole host of themes to choose from but are harder to manipulate.
